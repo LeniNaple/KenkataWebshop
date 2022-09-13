@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+:root {
+    
+    --color-theme: #20d3c2;
+    --color-theme-light: #edfcfa;
+    --color-dark: #080c24;
+    --color-theme-dark: #0E153D;
+    --color-white: #FFFFFF;
+    --color-gray-0: #aaaaaa;
+    --color-gray-1: #cccccc;
+    --color-gray-2: #e3e3e3;
+    --color-gray-3: #eeeeee;
+    --color-gray-4: #f6f6f6;
+    --color-red-1: #FE4545;
+    --color-green-1: #64CB83;
+    --color-product-instock: #82D8c6;
+    --color-product-outofstock: #FE6c6c;
+
+    --font-play:'Play', sans-serif;
+    --font-roboto:'Roboto', arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-size-14: 1.17rem;
+    --font-size-16: 1.33rem;
+    --font-size-18: 1.50rem;
+    --font-size-24: 2.0rem;
+    --font-size-36: 3.00rem;
+    --font-size-60: 5.00rem;
+
+    --border-radius-small: 8px;
+    --border-radius-medium: 25px;
+    --border-radius-rounded: 50%;
+
+}
+
+/* General changes */
+html, body {
+    /* font-size: 16px; add or not? */
+    line-height: 1.50;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+    
+}
+
+/* Top menu changes */
+.menu-top {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 2.5rem;
+}
+
+    /* alignment of inside menu-top */
+    .menu-top .container {
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0;
+    }
+
+        /* Left dropdown links */
+        .menu-top .container .site-settings {
+            display: flex;
+        }
+
+            /* The two dropdowns to the left */
+            .menu-top .container .site-settings .dropdown-theme {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+            }
+
+                /* "Eng + Swe" & "Eur + USD" */
+                .menu-top .site-settings .dropdown-theme .dropdown-menu {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: solid var(--color-theme);     
+                }
+
+                    .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                        width: 100%;
+                        margin: 0;
+
+                    }
+
+                        /* hover function on the dropdown-item */
+                        .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                            color: var(--color-theme-dark);
+                        }
+
+                /* Buttons' settings */
+                .menu-top .site-settings .dropdown-theme button{
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: none;
+                    padding: 0;
+                }
+
+                    .menu-top .site-settings .dropdown-theme button:hover{
+                        color: var(--color-theme-dark);
+                    }
+                    /* "EUR: Arrow" */
+                    .site-settings #selected-currency .fa-solid {
+                        margin-left: 0.375rem;
+                    }
+                    /* "ENG: Arrow" */
+                    .site-settings #selected-language .fa-solid {
+                        margin-left: 0.375rem;
+                        margin-right: 0.375rem;
+
+                    }
+                  
+        /* All links in menu-top */
+        .menu-top .menu-links-right a {
+            color: var(--color-white);
+            text-decoration: none;
+            margin: 0 1.2rem;
+        }
+
+            .menu-top .menu-links-right a:hover {
+                color: var(--color-theme-dark);
+            }
+
+            .menu-top .menu-links-right .site-links a {
+                display: none;
+            }
+
+        /* Social media links */
+        .menu-top .menu-links-right .social-media {
+            margin-left: 1rem;
+        }
+
+            .menu-top .menu-links-right .social-media a {
+                margin: 0 0.25rem;
+                font-size: var(--font-size-14);
+                display: none;
+                
+            }
+
+                .menu-top .menu-links-right .social-media a:last-child {
+                    margin: 0 0 0 0.25rem;
+                    font-size: var(--font-size-14);
+                }
+
+
+/* Below needs adjustment dependent on size */
+
+
+/* Main menu */
+
+.main-menu-top {
+    background-color: var(--color-white);
+    color: var(--color-theme-dark);
+}
+
+/* General attributes */
+.main-menu-top > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.625rem 0;
+}
+
+    /* Positioning of Image logotype */
+    .main-menu-top .container .logo-type {
+        flex: 2;
+    }
+
+    /* Nothing here yet */
+    .main-menu-top .container .search{
+        flex: 4;
+    }
+
+    /* Design and positioning of icon-links */
+    .main-menu-top .container .icons {
+        flex: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+        .main-menu-top .container .icon-links {
+            text-decoration: none; 
+            color: var(--color-theme-dark);
+            margin: 0 0.5em;
+        }
+
+            .main-menu-top .container .icon-links i {
+                font-size: var(--font-size-16);  
+            }
+
+                .main-menu-top .container .icon-links i:hover {
+                    color: var(--color-theme);
+                }
+
+            .main-menu-top .container .icon-links:first-child {
+                    margin: 0 3rem 0 0;
+/* Maybe remove nowrap?  */
+                    white-space: nowrap; 
+            }
+
+            .main-menu-top .container .icon-links:last-child {
+                margin: 0 0 0 0.5rem;
+/* Maybe remove nowrap?  */
+                white-space: nowrap;
+            }
+
+
+
+/* Here starts the bottom of Main-menu-top */
+
+    .main-menu-top nav {
+        border-top: 1px solid var(--color-gray-2);
+        border-bottom: 1px solid var(--color-gray-2);
+        
+    }
+        /* Adjusts main-menu-top */
+        .main-menu-top nav .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            align-items: center;
+        }
+
+        /* Adjusts width to browser-categories */
+        .main-menu-top nav .container .browser-categories {
+            flex: 1;
+            
+            
+        }
+
+            /* All things browser-categories button */
+            .main-menu-top nav .container .browser-categories button {
+                font-size: var(--font-size-14);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1rem;
+                color: var(--color-theme-light);
+                background-color: var(--color-theme);
+                border: none;   
+              
+                         
+            }   
+
+                /* Applies hover to browser-categories button */
+                .main-menu-top nav .container .browser-categories button:hover { 
+                    color: var(--color-theme-dark);
+                }
+
+                /* Puts SAN in center */
+                .main-menu-top nav .container .browser-categories button span { 
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+
+                    
+                }
+
+                /* Attributes to SAN in browse-categories */
+                .main-menu-top nav .container .browser-categories button .fa-bars {
+                    font-size: 1.4em;
+                    
+                }
+
+                /* Attributes to arrow in browse-categories */
+                .main-menu-top nav .container .browser-categories button .fa-chevron-down {
+                    font-size: 0.8em;
+                }
+
+            /* Everything Dropdown-menu */
+            .main-menu-top nav .browser-categories .dropdown-menu {
+                width: 100%;
+                background-color: var(--color-theme);
+                }
+
+                .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item {
+                    color: var(--color-theme-light);
+                    font-size: var(--font-size-14);
+                }
+
+                    .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item:hover {
+                        color: var(--color-theme-dark);
+                        background-color: var(--color-theme);
+                    }
+
+        /* All things Special offer button */
+        .main-menu-top nav .special-offer {
+            flex: 5;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+        }
+            .btn-theme {
+                color: var(--color-theme-light);
+                background-color: var(--color-theme);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                padding-left: 1.3125rem;
+                padding-right: 1.3125rem;
+                border: none;
+                margin-top: 0.375rem;
+                margin-bottom: 0.375rem;
+                font-size: var(--font-size-14);
+            }
+                .btn-theme:hover { 
+                    color: var(--color-theme-dark);
+                    background-color: var(--color-theme);
+                }
+
+
+
+                
+
+/* Start of Showcase */
+
+.showcase {
+    background-color: var(--color-gray-3);
+
+}
+
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+       
+    }
+
+    .showcase .container .showcase-left {
+      flex: 1;
+        
+    }
+
+    .showcase .container .showcase-right {
+        flex: 1;
+      
+    
+    }
+
+    .showcase .container .showcase-right img {
+        flex: 1;
+             
+       
+     
+    
+    }
+
+    .showcase .container .showcase-left h1 {
+        font-family: var(--font-play);
+        font-size: var(--font-size-60);
+        text-align: left;
+    }
+        .showcase .container .showcase-left h1 strong {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+        }
+
+    .showcase .container .showcase-left p {
+        font-size: var(--font-size-16);
+        font-family: var(--font-roboto);
+
+    }
+
+    .showcase .container .showcase-left .btn {
+        margin-top: 2.5rem;
+        background-color: var(--color-white);
+        color: var(--color-theme);
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-medium);
+        padding-left:1.875rem;
+        padding-right: 1.875rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        border-radius: 50px;
+        border: none;
+        }
+            .showcase .container .showcase-left .btn:hover { 
+                color: var(--color-theme-dark);
+                background-color: var(--color-theme);
+                }
+
+                .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item {
+                    color: var(--color-theme-light);
+                    font-size: var(--font-size-14);
+                }
+
+                    .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item:hover {
+                        color: var(--color-theme-dark);
+                        background-color: var(--color-theme);
+                    }
+
+        /* All things Special offer button */
+        .main-menu-top nav .special-offer {
+            flex: 5;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            
+        }
+            .btn-theme {
+                color: var(--color-theme-light);
+                background-color: var(--color-theme);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                padding-left: 1.3125rem;
+                padding-right: 1.3125rem;
+                border: none;
+                margin-top: 0.375rem;
+                margin-bottom: 0.375rem;
+                font-size: var(--font-size-14);
+            }
+
+
+
+/* Start of Webshop */
+
+.webshop-info {
+    padding: 4rem 0;
+
+}
+    .webshop-info .container {
+        max-width: 1800px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+        .webshop-info .container .info-box {
+            background-color: var(--color-theme-light);
+            padding: 1rem;
+            margin: 0 1rem;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border-radius: var(--border-radius-small);
+            
+        }
+            .webshop-info .container .info-box:hover {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+               
+            }
+
+
+            .webshop-info .container .info-box img {
+                margin-right: 1.5rem;
+
+            }
+
+            .webshop-info .container .info-box:hover img {
+                filter: sepia(0%) brightness(1000%);
+                
+            }
+
+            .webshop-info .container .info-box h1 {
+                color: var(--color-theme);
+                font-size: 1rem;
+                font-weight: var(--font-weight-medium);
+            }
+
+            .webshop-info .container .info-box:hover h1 {
+                color: var(--color-white);
+            }
+
+
+            .webshop-info .container .info-box p {
+                font-weight: var(--font-weight-medium);
+
+            }
+
+
+@media (max-width: 578px) {
+
+    .main-menu-top .container .icons #cart-total {
+        display: none;
+    }
+
+    .main-menu-top .container .icons .icon-links:last-child {
+        padding-right: 1rem;
+    }
+
+    .main-menu-top .container .logo-type {
+        padding-left: 1rem;
+    }
+
+    .main-menu-top .container .icons .icon-links:first-child span {
+        display: none;
+    }
+    .main-menu-top .container .icons .icon-links:first-child{
+        margin-right: 0;
+
+    }
+
+
+
+
+    
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .showcase .container .showcase-right {
+        display: none;
+
+    }
+
+    .showcase .container .showcase-left h1 {
+        text-align: center;
+    }
+
+        .showcase .container .showcase-left h1 strong {
+            display: block;
+                       
+        }
+        
+    .showcase .container .showcase-left p {
+        text-align: center;
+    }
+
+    .showcase .container .showcase-left a {
+      margin-bottom: 2rem;
+             
+    }
+
+    .showcase .container .showcase-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .showcase .container img {
+    padding-right: 0;
+    width: 100%;
+    
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .showcase .container .showcase-left h1 {
+        text-align: center;
+    }
+
+    .showcase .container .showcase-left p {
+        text-align: center;
+    }
+
+    .showcase .container .showcase-left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+@media (max-width: 992px) {
+
+    .showcase .container .showcase-right img {
+        display: none;
+
+    }
+    
+
+}
+
+}
+
+/* Change to max-width */
+
+@media (min-width: 992px) {
+        
+    .menu-top .container {
+        justify-content: space-between;
+
+    }
+    .menu-top .menu-links-right .social-media a {
+        display: inline; 
+
+    }
+    .showcase .container .showcase-left h1 strong {
+        display: block;
+        
+    }
+    
+
+}
+
+/* Change to max-width */
+
+@media (min-width: 578px) {
+
+    .menu-top .container {
+        justify-content: space-between;
+
+    }
+
+    .menu-top .menu-links-right .site-links a {
+        display: inline;
+
+    }
+
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+
+    .showcase .container .showcase-left h1 {
+        font-size: var(--font-size-36);
+    }
+    
+
+}
