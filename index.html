@@ -70,15 +70,20 @@
               <div class="icons">
                 <a class="icon-links" href="#"><i class="fa-regular fa-user me-2"></i><span>My account</span></a>
                 <a class="icon-links" href="#"><i class="fa-regular fa-heart"></i></a>
-                <a class="icon-links" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                <a class="icon-links" href="#"><i class="fa-regular fa-bag-shopping me-2"></i>
-                  <span id="cart-total">€99999.9</span>
+                <a id="shuffle-cart" class="icon-links" href="#">
+                  <span class="badge rounded-pill bg-theme">0</span>
+                  <i class="fa-regular fa-shuffle"></i>
+                </a>
+                <a id="cart" class="icon-links" href="#">
+                  <span class="badge rounded-pill bg-theme">0</span>
+                  <i class="fa-regular fa-bag-shopping me-2"></i>
+                  <span id="cart-total-amount">€9999.90</span>
                 </a>
               </div>
           </div>
           <nav>
               <div class="container">
-                  <div class="browser-categories">
+                  <div class="browse-categories">
                       <div class="dropdown">
                           <button class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                               <span>
@@ -104,7 +109,7 @@
   </header>
 
 
-  <section class="showcase d-none">
+  <section class="showcase">
       <div class="container">
         <div class="showcase-left">
           <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -119,7 +124,7 @@
       </div>
   </section>
 
-  <section class="webshop-info d-none">
+  <section class="webshop-info">
     <div class="container">
       <div class="info-box">
         <img src="images/info-boxes/box-1-img.svg" alt="Free shipping">
@@ -155,40 +160,69 @@
 
   <section class="shop-by-category">
     <div class="container">
-      <div class="section-title d-none">
+      <div class="section-title">
         <h1>SHOP BY <span>CATEGORY</span></h1>
         <img src="images/wave-line.svg" alt="Shop by category">
         <p>We always try to give you the best product within a fast and reliable way</p>
       </div>
 
       <div class="grid border">
-        <div id="category-box-1" class="category-box">
-          <div class="category-box-title">Men</div>
-        </div>   
-        <div id="category-box-2" class="category-box">
-          <div class="category-box-title">Women</div>
-        </div> 
-        <div id="category-box-3" class="category-box">
-          <div class="category-box-title">Kids</div>
-        </div> 
-        <div id="category-box-4" class="category-box">
-          <div class="category-box-title">Shoes</div>
-        </div> 
-        <div id="category-box-5" class="category-box">
-          <div class="category-box-title">Hats</div>
-        </div> 
-        <div id="category-box-6" class="category-box">
-          <div class="category-box-title">Sunglasses <span>18 Products</span></div>
-        </div> 
-        <div id="category-box-7" class="category-box">
-          <div class="category-box-title">Watches</div>
-        </div> 
+        <a href="#" id="category-box-1" class="category-box">
+          <div class="category-box-title">
+            Men 
+            <span>50 Products</span>
+          </div>
+        </a>   
+        <a href="#"  id="category-box-2" class="category-box">
+          <div class="category-box-title">
+            Women 
+            <span>9001 Products</span>
+          </div>
+        </a> 
+        <a href="#"  id="category-box-3" class="category-box">
+          <div class="category-box-title">
+            Kids 
+            <span>99 Products</span>
+          </div>
+        </a> 
+        <a href="#"  id="category-box-4" class="category-box">
+          <div class="category-box-title">
+            Shoes 
+            <span>98 Products</span>
+          </div>
+        </a> 
+        <a href="#"  id="category-box-5" class="category-box">
+          <div class="category-box-title">
+            Hats 
+            <span>42 Products</span>
+          </div>
+        </a> 
+        <a href="#"  id="category-box-6" class="category-box">
+          <div class="category-box-title">
+            Sunglasses 
+            <span>18 Products</span>
+          </div>
+        </a> 
+        <a href="#"  id="category-box-7" class="category-box">
+          <div class="category-box-title">
+            Watches 
+            <span>12 Products</span>
+          </div>
+        </a> 
       </div>
 
     </div>
   </section>
 
-
+  <section class="new-arrivals">
+    <div class="container">
+      <div class="section-title">
+        <h1>NEW <span>ARRIVALS</span></h1>
+        <img src="images/wave-line.svg" alt="new-arrivals">
+        <p>Check out our latest products from top fashion designers</p>
+      </div>
+    </div>
+  </section>
 
 <!-- remove later -->
   <div style="height: 4000px;"></div>

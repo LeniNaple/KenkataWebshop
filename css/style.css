@@ -63,6 +63,10 @@ html, body {
             margin: 1rem 0;
         }
 
+.bg-theme {
+    background-color: var(--color-theme);
+}
+
 
 /* Top menu changes */
 .menu-top {
@@ -201,9 +205,9 @@ html, body {
                 font-size: var(--font-size-16);  
             }
 
-                .main-menu-top .container .icon-links i:hover {
-                    color: var(--color-theme);
-                }
+            .main-menu-top .container .icon-links:hover {
+                color: var(--color-theme);
+            }
 
             .main-menu-top .container .icon-links:first-child {
                     margin: 0 3rem 0 0;
@@ -216,6 +220,39 @@ html, body {
 /* Maybe remove nowrap?  */
                 white-space: nowrap;
             }
+
+            .main-menu-top .icons #cart {
+                position: relative;
+            }
+                .main-menu-top .icons #cart .badge {
+                    position: absolute;
+                    top: -0.85rem;
+                    left: 0.65rem;
+                }
+                .main-menu-top .icons #cart:hover .badge {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-theme);
+                }
+
+            .main-menu-top .icons #shuffle-cart {
+                position: relative;
+
+
+            }
+                .main-menu-top .icons #shuffle-cart .badge {
+                    position: absolute;
+                    top: -0.85rem;
+                    left: 0.65rem;
+                }
+                .main-menu-top .icons #shuffle-cart:hover .badge {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-theme);
+                }
+
+
+                
+
+                
 
 
 
@@ -233,11 +270,11 @@ html, body {
             align-items: center;
         }
 
-        .main-menu-top nav .container .browser-categories {
+        .main-menu-top nav .container .browse-categories {
             flex: 1; 
         }
 
-            .main-menu-top nav .container .browser-categories button {
+            .main-menu-top nav .container .browse-categories button {
                 font-size: var(--font-size-14);
                 width: 100%;
                 display: flex;
@@ -249,36 +286,36 @@ html, body {
                 border: none;             
             }   
 
-                .main-menu-top nav .container .browser-categories button:hover { 
+                .main-menu-top nav .container .browse-categories button:hover { 
                     color: var(--color-theme-dark);
                 }
 
-                .main-menu-top nav .container .browser-categories button span { 
+                .main-menu-top nav .container .browse-categories button span { 
                     display: flex;
                     align-items: center;
 /* Maybe remove nowrap? */
                     white-space: nowrap;  
                 }
 
-                .main-menu-top nav .container .browser-categories button .fa-bars {
+                .main-menu-top nav .container .browse-categories button .fa-bars {
                     font-size: 1.4em;  
                 }
 
-                .main-menu-top nav .container .browser-categories button .fa-chevron-down {
+                .main-menu-top nav .container .browse-categories button .fa-chevron-down {
                     font-size: 0.8em;
                 }
 
-            .main-menu-top nav .browser-categories .dropdown-menu {
+            .main-menu-top nav .browse-categories .dropdown-menu {
                 width: 100%;
                 background-color: var(--color-theme);
                 }
 
-                .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item {
+                .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item {
                     color: var(--color-theme-light);
                     font-size: var(--font-size-14);
                 }
 
-                    .main-menu-top nav .browser-categories .dropdown-menu .dropdown-item:hover {
+                    .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item:hover {
                         color: var(--color-theme-dark);
                         background-color: var(--color-theme);
                     }
@@ -440,6 +477,7 @@ html, body {
 }
 
     .shop-by-category .category-box {
+        position: relative;
         background-color: var(--color-gray-1);
         height: 100%;
         width: 100%;
@@ -448,6 +486,9 @@ html, body {
     }
 
         .shop-by-category .category-box .category-box-title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
             width: 50%;
             border-radius: 0 var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);
@@ -455,11 +496,22 @@ html, body {
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
             font-size: var(--font-size-16);
-
         }
 
+            .shop-by-category .category-box:hover .category-box-title {
+                width: 60%;
+                height: 85px;
+            }
+
             .shop-by-category .category-box .category-box-title span {
-                display: flex;
+                display: none;
+                color: var(--color-theme-light);
+                font-size: var(--font-size-14);
+                font-weight: var(--font-weight-regular);
+            }
+
+            .shop-by-category .category-box:hover .category-box-title span {
+                display: block;
                 color: var(--color-theme-light);
                 font-size: var(--font-size-14);
                 font-weight: var(--font-weight-regular);
@@ -495,6 +547,15 @@ html, body {
     } 
 
 
+/* New Arrivals */
+
+.new-arrivals {
+    margin-top: 4rem;
+
+}
+
+
+
 
 
 /* Maximum width */
@@ -509,7 +570,7 @@ html, body {
         padding-right: 1rem;
     }
 
-        .main-menu-top .container .icons #cart-total {
+        .main-menu-top .container .icons #cart-total-amount {
             display: none;
         }
 
