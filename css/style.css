@@ -7,6 +7,7 @@
     --color-theme-light: #edfcfa;
     --color-dark: #080c24;
     --color-theme-dark: #0E153D;
+    --color-theme-light-dark: #50546E;
     --color-white: #FFFFFF;
     --color-gray-0: #aaaaaa;
     --color-gray-1: #cccccc;
@@ -245,8 +246,14 @@ html, body {
                     position: absolute;
                     top: -0.85rem;
                     left: 0.65rem;
+                    font-size: 0.8rem;
+                    font-weight: 100;
+                    padding: .28rem .4rem;
                     transition: color 200ms ease-in-out, background 200ms ease-in-out;
+                    
+                    
                 }
+                
                 .main-menu-top .icons #cart:hover .badge {
                     background-color: var(--color-theme-dark);
                     color: var(--color-theme); 
@@ -261,6 +268,9 @@ html, body {
                     position: absolute;
                     top: -0.85rem;
                     left: 0.65rem;
+                    font-size: 0.8rem;
+                    font-weight: 100;
+                    padding: .28rem .4rem;
                     transition: color 200ms ease-in-out, background 200ms ease-in-out;
                 }
                 .main-menu-top .icons #shuffle-cart:hover .badge {
@@ -717,6 +727,117 @@ html, body {
                     }
 
 
+/* Divider */
+
+
+
+.divider {
+    background-color: var(--color-gray-3);
+}
+
+    .divider .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+        /* Showcase-left (Text +btn) */
+        .divider .container .divider-left {
+            flex: 2;  
+            background-color: var(--color-theme);
+            height: 100%;
+
+        }
+
+            .divider .container .divider-left h1 {
+                font-family: var(--font-play);
+                font-size: var(--font-size-60);
+                text-align: left;
+                color: var(--color-theme);
+            }
+            
+                .showcase .container .showcase-left h1 strong {
+                    font-weight: var(--font-weight-bold);
+                    color: var(--color-theme);
+                }
+
+            .showcase .container .showcase-left p {
+                font-size: var(--font-size-16);
+                font-family: var(--font-roboto);
+            }
+
+            .showcase .container .showcase-left .btn {
+                margin-top: 2.5rem;
+                background-color: var(--color-white);
+                color: var(--color-theme);
+                font-size: var(--font-size-18);
+                font-weight: var(--font-weight-medium);
+                padding-left:1.875rem;
+                padding-right: 1.875rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                border-radius: 50px;
+                border: none;
+            }
+
+                .showcase .container .showcase-left .btn:hover { 
+                    color: var(--color-theme-dark);
+                    background-color: var(--color-theme);
+                }
+
+        /* Showcase-right (image) */
+        .divider .container .divider-right {
+            flex: 1;
+        }
+
+
+
+
+
+.site-title {
+    background-color: var(--color-theme-light-dark);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+
+}
+    .site-title .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .site-title h1 {
+        color: var(--color-theme);
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-medium);
+        font-family: var(--font-roboto);
+        margin: 0;
+    }   
+
+    
+    .site-title .site-title-breadcrumb ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+                    
 
 
 
