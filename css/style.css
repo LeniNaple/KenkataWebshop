@@ -14,6 +14,7 @@
     --color-gray-2: #e3e3e3;
     --color-gray-3: #eeeeee;
     --color-gray-4: #f6f6f6;
+    --color-gray-5: #777777;
     --color-red-1: #FE4545;
     --color-green-1: #64CB83;
     --color-product-instock: #82D8c6;
@@ -46,6 +47,43 @@ html, body {
     color: var(--color-theme-dark);
 }
 
+.bg-theme {
+    background-color: var(--color-theme);
+}
+
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.31rem;
+    padding-right: 1.31rem;
+    border: none;
+    transition: color 250ms ease-in-out    
+}
+    .btn-theme:hover {
+        color: var(--color-theme-dark);      
+        background-color: var(--color-theme); 
+    }
+
+
+.text-theme {
+    color: var(--color-theme);
+}
+
+.instock {
+    color: var(--color-product-instock);
+}
+
+.outofstock {
+    color: var(--color-product-outofstock);
+}
+
+.required {
+   color: var(--color-theme); 
+}
+
+
 .section-title {
     color: var(--color-theme-dark);
     text-align: center;
@@ -64,22 +102,6 @@ html, body {
             margin: 1rem 0;
             font-size: var(--font-size-16);
         }
-
-.bg-theme {
-    background-color: var(--color-theme);
-}
-
-.text-theme {
-    color: var(--color-theme);
-}
-
-.instock {
-    color: var(--color-product-instock);
-}
-
-.outofstock {
-    color: var(--color-product-outofstock);
-}
 
 
 /* Top menu changes */
@@ -290,6 +312,8 @@ html, body {
     .main-menu-top nav {
         border-top: 1px solid var(--color-gray-2);
         border-bottom: 1px solid var(--color-gray-2);
+        margin: 0;
+        padding: 0;
     }
  
         .main-menu-top nav .container {
@@ -297,11 +321,11 @@ html, body {
             justify-content: space-between;
             padding: 0;
             align-items: center;
-        }
+            }
 
         .main-menu-top nav .container .browse-categories {
             flex: 1; 
-                       
+           
         }
 
             .main-menu-top nav .container .browse-categories button {
@@ -314,7 +338,7 @@ html, body {
                 color: var(--color-theme-light);
                 background-color: var(--color-theme);
                 border: none;      
-                transition: color 200ms ease-in-out;       
+                transition: color 200ms ease-in-out;     
             }   
                 .main-menu-top nav .container .browse-categories button:hover { 
                     color: var(--color-theme-dark);
@@ -799,8 +823,6 @@ html, body {
     background-color: var(--color-theme-light-dark);
     padding-top: 3rem;
     padding-bottom: 3rem;
-    
-
 }
     .site-title .container {
         display: flex;
@@ -809,25 +831,133 @@ html, body {
         padding-left: 0;
         padding-right: 0;
     }
-    .site-title h1 {
-        color: var(--color-theme);
-        font-size: 1.5rem;
-        font-weight: var(--font-weight-medium);
-        font-family: var(--font-roboto);
-        margin: 0;
-    }   
+        .site-title h1 {
+            color: var(--color-theme);
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-medium);
+            font-family: var(--font-roboto);
+            margin: 0;
+        }   
+        .site-title ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }   
+        .site-title .breadcrumb {
+            list-style: none;
+            margin: 0;
+        }
+            .site-title .breadcrumb li {
+                display: inline;
+                font-size: 18px;
+                color: var(--color-white);
+            }
+                .site-title .breadcrumb li+li:before {
+                    padding: 0 .7rem 0 1rem;
+                    color: var(--color-white);
+                    content: "/\00a0";
+                }
+                .site-title .breadcrumb li a {
+                    color: var(--color-theme);
+                    text-decoration: none;
+                    transition: color 250ms ease-in-out;
+                }
+                    .site-title .breadcrumb li a:hover {
+                        color: var(--color-white);
+                    }
 
-    
-    .site-title .site-title-breadcrumb ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        list-style: none;
 
 
+
+
+.signup-signin {
+    padding: 6rem 0;
+
+}
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem; 
+        padding-left: 0;
+        padding-right: 0;
+        align-items: start;
+    }
+        .signup-signin .card {
+            border: none;
+            padding: 1.5rem;
+            border-radius: var(--border-radius-small);
+            background-color: var(--color-gray-4);
+        }
+            .signup-signin .card .card-body .card-title {
+                font-size: 1.4rem;
+                font-weight: var(--font-weight-medium);
+                font-family: var(--font-roboto);
+                color: var(--color-theme-dark);
+            }
+            .signup-signin .card .card-body .card-text {
+                line-height: 2;
+                margin: 1.5rem 0;
+            }
+                .signup-signin .card .card-body .card-text.text-small {
+                    color: var(--color-gray-5);
+                    font-size: .875rem;
+                }
+                .signup-signin .card .card-body .card-text a {
+                    text-decoration: none;
+                    color: var(--color-theme);
+                    font-weight: var(--font-weight-medium);
+                }
+                    .signup-signin .card .card-body .card-text a:hover {
+                        text-decoration: underline;
+                        color: var(--color-theme-dark);
+                    }
+
+
+.signup-signin form input[type=checkbox] {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+
+
+#signupform input[type=text], #signupform input[type=email], #signupform input[type=password]  {
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius-small);
+    padding: .5rem .9rem;
+    margin: .3rem 0;
+    border: none;
+}
+
+    #signupform input:focus {
+        outline: 0;
+        box-shadow: 0 0 3px 1px var(--color-theme);
     }
 
+#signinform input[type=email], input[type=password]  {
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius-small);
+    padding: .5rem .9rem;
+    margin: .3rem 0;
+    border: none;
+}
+
+    #signinform input:focus {
+        outline: 0;
+        box-shadow: 0 0 3px 1px var(--color-theme);
+    }
+                
+
+
+
+
+
+    
 
 
 
