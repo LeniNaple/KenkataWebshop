@@ -66,7 +66,6 @@ html, body {
         background-color: var(--color-theme); 
     }
 
-
 .text-theme {
     color: var(--color-theme);
 }
@@ -83,13 +82,11 @@ html, body {
    color: var(--color-theme); 
 }
 
-
 .section-title {
     color: var(--color-theme-dark);
     text-align: center;
     padding: 3rem 0;
 }
-
     .section-title h1 {
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
@@ -104,13 +101,13 @@ html, body {
         }
 
 
+
 /* Top menu changes */
 .menu-top {
     background-color: var(--color-theme);
     color: var(--color-white);
     height: 2.5rem;
 }
-
     .menu-top .container {
         height: 100%;
         display: flex;
@@ -118,22 +115,18 @@ html, body {
         align-items: center;
         padding: 0;
     }
-
         .menu-top .container .site-settings {
             display: flex;
         }
-
             .menu-top .container .site-settings .dropdown-theme {
                 background-color: var(--color-theme);
                 color: var(--color-white);
             }
-
                 .menu-top .site-settings .dropdown-theme .dropdown-menu {
                     background-color: var(--color-theme);
                     color: var(--color-white);
                     border: solid var(--color-theme);     
                 }
-
                     .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
                         background-color: var(--color-theme);
                         color: var(--color-white);
@@ -141,11 +134,9 @@ html, body {
                         margin: 0;
                         transition: color 200ms ease-in-out;
                     }
-
                         .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
                             color: var(--color-theme-dark);
                         }
-
                 .menu-top .site-settings .dropdown-theme button{
                     background-color: var(--color-theme);
                     color: var(--color-white);
@@ -153,20 +144,16 @@ html, body {
                     padding: 0;
                     transition: color 200ms ease-in-out;
                 }
-
                     .menu-top .site-settings .dropdown-theme button:hover{
                         color: var(--color-theme-dark);
-                    }
-                    
+                    } 
                     .site-settings #selected-currency .fa-solid {
                         margin-left: 0.375rem;
                     }
-                    
                     .site-settings #selected-language .fa-solid {
                         margin-left: 0.375rem;
                         margin-right: 0.375rem;
-                    }
-                  
+                    }  
         .menu-top .menu-links-right a {
             color: var(--color-white);
             text-decoration: none;
@@ -198,19 +185,12 @@ html, body {
                 }
 
 
-
-
-/* Below needs adjustment dependent on size */
-
-
-/* Main menu */
+/* Main menu top */
 
 .main-menu-top {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
 }
-
-/* General attributes */
 .main-menu-top > .container {
     display: flex;
     justify-content: space-between;
@@ -218,11 +198,12 @@ html, body {
     padding: 2.625rem 0;
 }
 
+/* Kenkata logo */
     .main-menu-top .container .logo-type {
         flex: 2;
     }
 
-    /* Add search-bar */
+/* Search bar */
     .main-menu-top .container .search{
         flex: 4;
     }
@@ -231,7 +212,6 @@ html, body {
             height: 45px;
             margin: auto;
             position: relative;
-
         }
             .main-menu-top .search #searchbox-form input {
                 position: absolute;
@@ -243,11 +223,10 @@ html, body {
                 font-size: 0.9rem;
                 padding-left: 1.3rem;
             }
-
-            .main-menu-top .search #searchbox-form input:focus {
-                outline: 0;
-                box-shadow: 0 0 2px 0px var(--color-theme);
-            }
+                .main-menu-top .search #searchbox-form input:focus {
+                    outline: 0;
+                    box-shadow: 0 0 2px 0px var(--color-theme);
+                }
             .main-menu-top .search #searchbox-form button {
                 position: absolute;
                 top: 0;
@@ -262,49 +241,35 @@ html, body {
             }
                 .main-menu-top .search #searchbox-form button:hover {
                     color: var(--color-theme-dark);
-                }
+                }   
 
-
-
-                
-
-
-
-
+/* Right icons */
     .main-menu-top .container .icons {
         flex: 3;
         display: flex;
         justify-content: end;
         align-items: center;
     }
-
         .main-menu-top .container .icon-links {
             text-decoration: none; 
             color: var(--color-theme-dark);
             margin: 0 0.5em;
             transition: color 200ms ease-in-out;
         }
-
             .main-menu-top .container .icon-links i {
                 font-size: var(--font-size-16);  
             }
-
             .main-menu-top .container .icon-links:hover {
                 color: var(--color-theme);
             }
-
             .main-menu-top .container .icon-links:first-child {
                     margin: 0 3rem 0 0;
-/* Maybe remove nowrap?  */
                     white-space: nowrap; 
             }
-
             .main-menu-top .container .icon-links:last-child {
                 margin: 0 0 0 0.5rem;
-/* Maybe remove nowrap?  */
                 white-space: nowrap;
             }
-
             .main-menu-top .icons #cart {
                 position: relative;
             }
@@ -315,20 +280,14 @@ html, body {
                     font-size: 0.8rem;
                     font-weight: 100;
                     padding: .28rem .4rem;
-                    transition: color 200ms ease-in-out, background 200ms ease-in-out;
-                    
-                    
-                }
-                
+                    transition: color 200ms ease-in-out, background 200ms ease-in-out; 
+                }  
                 .main-menu-top .icons #cart:hover .badge {
                     background-color: var(--color-theme-dark);
                     color: var(--color-theme); 
                 }
-
             .main-menu-top .icons #shuffle-cart {
                 position: relative;
-
-
             }
                 .main-menu-top .icons #shuffle-cart .badge {
                     position: absolute;
@@ -356,76 +315,66 @@ html, body {
     .main-menu-top nav {
         border-top: 1px solid var(--color-gray-2);
         border-bottom: 1px solid var(--color-gray-2);
-        margin: 0;
-        padding: 0;
+        
     }
- 
         .main-menu-top nav .container {
             display: flex;
             justify-content: space-between;
             padding: 0;
             align-items: center;
-            }
-
-        .main-menu-top nav .container .browse-categories {
-            flex: 1; 
-           
         }
 
-            .main-menu-top nav .container .browse-categories button {
-                font-size: var(--font-size-14);
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0.7rem 1rem;
-                color: var(--color-theme-light);
-                background-color: var(--color-theme);
-                border: none;      
-                transition: color 200ms ease-in-out;     
-            }   
-                .main-menu-top nav .container .browse-categories button:hover { 
-                    color: var(--color-theme-dark);
-                }
-
-                .main-menu-top nav .container .browse-categories button span { 
-                    display: flex;
-                    align-items: center;
-/* Maybe remove nowrap? */
-                    white-space: nowrap;  
-                }
-
-                .main-menu-top nav .container .browse-categories button .fa-bars {
-                    font-size: 1.4em;  
-                }
-
-                .main-menu-top nav .container .browse-categories button .fa-chevron-down {
-                    font-size: 0.8em;
-                }
-
-            .main-menu-top nav .browse-categories .dropdown-menu {
-                width: 100%;
-                background-color: var(--color-theme);
-                }
-
-                .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item {
-                    color: var(--color-theme-light);
+/* Browser Categories */
+            .main-menu-top nav .container .browse-categories {
+                flex: 1;   
+            }
+                .main-menu-top nav .container .browse-categories button {
                     font-size: var(--font-size-14);
-                    transition: color 200ms ease-in-out;
-                }
-
-                    .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item:hover {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.8rem 1rem;
+                    color: var(--color-theme-light);
+                    background-color: var(--color-theme);
+                    border: none;      
+                    transition: color 200ms ease-in-out;     
+                }   
+                    .main-menu-top nav .container .browse-categories button:hover { 
                         color: var(--color-theme-dark);
-                        background-color: var(--color-theme);
                     }
+                    .main-menu-top nav .container .browse-categories button span { 
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;  
+                    }
+                    .main-menu-top nav .container .browse-categories button .fa-bars {
+                        font-size: 1.4em;  
+                    }
+                    .main-menu-top nav .container .browse-categories button .fa-chevron-down {
+                        font-size: 0.8em;
+                    }
+                .main-menu-top nav .browse-categories .dropdown-menu {
+                    width: 100%;
+                    background-color: var(--color-theme);
+                    }
+                    .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item {
+                        color: var(--color-theme-light);
+                        font-size: var(--font-size-14);
+                        transition: color 200ms ease-in-out;
+                    }
+                        .main-menu-top nav .browse-categories .dropdown-menu .dropdown-item:hover {
+                            color: var(--color-theme-dark);
+                            background-color: var(--color-theme);
+                        }
 
+/* Special Offer */
         .main-menu-top nav .special-offer {
             flex: 5;
             display: flex;
             justify-content: end;
             align-items: center;
         }
-
             .main-menu-top .special-offer .btn-theme {
                 color: var(--color-theme-light);
                 background-color: var(--color-theme);
@@ -438,40 +387,31 @@ html, body {
                 margin-bottom: 0.375rem;
                 font-size: var(--font-size-14);
             }
-
                 .main-menu-top .special-offer .btn-theme:hover { 
                     color: var(--color-theme-dark);
                     background-color: var(--color-theme);
                 }
+          
 
-
-
-                
-
-/* Start of Showcase */
-
+/* Showcase */
 .showcase {
     background-color: var(--color-gray-3);
 }
-
     .showcase .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0;
     }
-
-        /* Showcase-left (Text +btn) */
+/* Showcase-left (Text +btn) */
         .showcase .container .showcase-left {
         flex: 1;  
         }
-
             .showcase .container .showcase-left h1 {
                 font-family: var(--font-play);
                 font-size: var(--font-size-60);
                 text-align: left;
             }
-            
                 .showcase .container .showcase-left h1 strong {
                     font-weight: var(--font-weight-bold);
                     color: var(--color-theme);
@@ -481,7 +421,6 @@ html, body {
                 font-size: var(--font-size-16);
                 font-family: var(--font-roboto);
             }
-
             .showcase .container .showcase-left .btn {
                 margin-top: 2.5rem;
                 background-color: var(--color-white);
@@ -495,17 +434,14 @@ html, body {
                 border-radius: 50px;
                 border: none;
             }
-
                 .showcase .container .showcase-left .btn:hover { 
                     color: var(--color-theme-dark);
                     background-color: var(--color-theme);
                 }
-
-        /* Showcase-right (image) */
+/* Showcase-right (image) */
         .showcase .container .showcase-right {
             flex: 1;
         }
-
             .showcase .container .showcase-right img {
                 flex: 1;
             }
@@ -515,13 +451,11 @@ html, body {
 .webshop-info {
     padding: 4rem 0 7rem 0;
 }
-
     .webshop-info .container {
         max-width: 1800px;
         display: flex;
         justify-content: space-evenly;
     }
-
         .webshop-info .container .info-box {
             background-color: var(--color-theme-light);
             padding: 1rem;
@@ -532,55 +466,45 @@ html, body {
             border-radius: var(--border-radius-small);  
             transition: color 200ms ease-in-out, background 300ms ease-in-out;
         }
-
             .webshop-info .container .info-box:hover {
                 background-color: var(--color-theme);
                 color: var(--color-white);
             }
-
-
             .webshop-info .container .info-box img {
                 margin-right: 1.5rem;
                 filter: brightness(100%);
                 transition: filter 300ms ease-in-out;
-
             }
-
                 .webshop-info .container .info-box:hover img {
                     filter: brightness(1000%); 
                 }
-
             .webshop-info .container .info-box h1 {
                 color: var(--color-theme);
                 font-size: 1rem;
                 font-weight: var(--font-weight-medium);
                 transition: 300ms ease-in-out;
             }
-
                 .webshop-info .container .info-box:hover h1 {
                     color: var(--color-white);
                 }
-
             .webshop-info .container .info-box p {
                 font-weight: var(--font-weight-medium);
             }
 
 
 /* Shop by category */
-
-
 .shop-by-category .container {
     padding: 0;
 }
 
+/* Grid & its design */
 .shop-by-category .grid{
     display: grid;
     gap: 0.625rem;
     grid-template-columns: repeat(5, minmax(100px, 1fr));
     grid-template-rows: repeat(3, minmax(100px, 255px));
 }
-
-    .shop-by-category .category-box {
+    .shop-by-category .grid .category-box {
         position: relative;
         background-color: var(--color-gray-1);
         height: 100%;
@@ -588,8 +512,7 @@ html, body {
         border-radius: var(--border-radius-small);
         overflow: hidden;
     }
-
-        .shop-by-category .category-box .category-box-title {
+        .shop-by-category .grid .category-box .category-box-title {
             position: absolute;
             left: 0;
             bottom: 0;
@@ -602,26 +525,20 @@ html, body {
             font-size: var(--font-size-16);
             height: 50px;
             transition: height 300ms ease-in-out, width 300ms ease-in-out;
-            
         }
-
-            .shop-by-category .category-box:hover .category-box-title {
+            .shop-by-category .grid .category-box:hover .category-box-title {
                 width: 60%;
                 height: 85px;
-                
             }
-
-            .shop-by-category .category-box .category-box-title span {
+            .shop-by-category .grid .category-box .category-box-title span {
                 display: block;
                 color: var(--color-theme-light);
                 font-size: var(--font-size-14);
                 font-weight: var(--font-weight-regular);
                 opacity: 0%;
                 transition: opacity 300ms;
-    
             }
-
-            .shop-by-category .category-box:hover .category-box-title span {
+            .shop-by-category .grid .category-box:hover .category-box-title span {
                 display: block;
                 color: var(--color-theme-light);
                 font-size: var(--font-size-14);
@@ -664,27 +581,20 @@ html, body {
 
 .new-arrivals {
     padding-top: 7rem;
-
 } 
-
     .new-arrivals .card {
         position: relative;
         height: 400px;
         overflow: hidden;
     }
-
         .new-arrivals .card .card-bottom-line {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
         }
-
-
         .new-arrivals .card img {
             height: 400px;
         }
-
         .new-arrivals .card .card-body {
             position: absolute;
             bottom: 0;
@@ -698,13 +608,10 @@ html, body {
             .new-arrivals .card:hover .card-body {
                 height: 40%;
             }
-
-
         .new-arrivals .card .card-body h1 {
             font-size: 1.125rem;
             font-weight: var(--font-weight-regular);
         }
-        
         .new-arrivals .card .card-body button {
             background-color: transparent;
             color: var(--color-white);
@@ -716,12 +623,10 @@ html, body {
             opacity: 0%;
             transition: opacity 300ms ease-in-out, margin 300ms ease-in-out;
         }
-        
             .new-arrivals .card:hover .card-body button {
                 opacity: 100%;
                 margin-top: 0;
             }
-
         .new-arrivals .card .card-body .card-old-price {
             text-decoration: line-through;
             margin-bottom: 0;
@@ -731,7 +636,6 @@ html, body {
             .new-arrivals .card:hover .card-body .card-old-price {
                 opacity: 100%;
             }
-
         .new-arrivals .card .card-body .card-discount-price {
             color: var(--color-theme);
             font-weight: var(--font-weight-medium);
@@ -743,9 +647,6 @@ html, body {
             .new-arrivals .card:hover .card-body .card-discount-price {
                 opacity: 100%;
             }
-
-
-
     .new-arrivals .card .card-background {
         position: absolute;
         bottom: 0;
@@ -755,12 +656,9 @@ html, body {
         opacity: 90%;
         transition: height 300ms ease-in-out;
     }
-
         .new-arrivals .card:hover .card-background {
             height: 100%;
         }
-
-
     .new-arrivals .card .card-menu {
         position: absolute;
         z-index: 1;
@@ -774,7 +672,6 @@ html, body {
         background-color: var(--color-white);
         transition: top 300ms ease-in-out;
     }
-
         .new-arrivals .card:hover .card-menu {
             top: 20px;
         }
@@ -795,74 +692,11 @@ html, body {
                     }
 
 
-/* Divider */
-
-
-
-.divider {
-    background-color: var(--color-gray-3);
-}
-
-    .divider .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-    }
-
-        /* Showcase-left (Text +btn) */
-        .divider .container .divider-left {
-            flex: 2;  
-            background-color: var(--color-theme);
-            height: 100%;
-
-        }
-
-            .divider .container .divider-left h1 {
-                font-family: var(--font-play);
-                font-size: var(--font-size-60);
-                text-align: left;
-                color: var(--color-theme);
-            }
-            
-                .showcase .container .showcase-left h1 strong {
-                    font-weight: var(--font-weight-bold);
-                    color: var(--color-theme);
-                }
-
-            .showcase .container .showcase-left p {
-                font-size: var(--font-size-16);
-                font-family: var(--font-roboto);
-            }
-
-            .showcase .container .showcase-left .btn {
-                margin-top: 2.5rem;
-                background-color: var(--color-white);
-                color: var(--color-theme);
-                font-size: var(--font-size-18);
-                font-weight: var(--font-weight-medium);
-                padding-left:1.875rem;
-                padding-right: 1.875rem;
-                padding-bottom: 1rem;
-                padding-top: 1rem;
-                border-radius: 50px;
-                border: none;
-            }
-
-                .showcase .container .showcase-left .btn:hover { 
-                    color: var(--color-theme-dark);
-                    background-color: var(--color-theme);
-                }
-
-        /* Showcase-right (image) */
-        .divider .container .divider-right {
-            flex: 1;
-        }
 
 
 
 
-
+/* Second webpage - Top part */
 .site-title {
     background-color: var(--color-theme-light-dark);
     padding-top: 3rem;
@@ -915,7 +749,7 @@ html, body {
 
 
 
-/* Signup Cards */
+/* Second page - Signup Cards */
 .signup-signin {
     padding: 6rem 0;
 }
@@ -964,6 +798,8 @@ html, body {
                             color: var(--color-theme-dark);
                             text-decoration: underline;
                         }
+
+/* Divider, left card before external buttons */
             .signup-signin .card .external-logins {
                 margin-top: 2rem;
             }
@@ -985,34 +821,35 @@ html, body {
                         padding-left: 10px;
                     }
 
-.external-social-media-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-    .external-social-media-button .facebook-button {
-        background-image: url(/images/external-media/facebook-login.svg);
-        background-repeat: no-repeat;
-        border: none;
-        height: 42px;
-        width: 235px;
-        border-radius: 8px;
-    }
-    .external-social-media-button .google-button {
-        background-image: url(/images/external-media/google-login.svg);
-        background-repeat: no-repeat;
-        border: none;
-        height: 42px;
-        width: 235px;
-        border-radius: 8px;
-    }
-        .external-social-media-button .google-button:hover,.external-social-media-button .facebook-button:hover {
-            filter: brightness(90%);
-        }
+/* External buttons */
+            .signup-signin .card .card-body .external-social-media-button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .signup-signin .card .card-body .external-social-media-button .facebook-button {
+                    background-image: url(/images/external-media/facebook-login.svg);
+                    background-repeat: no-repeat;
+                    border: none;
+                    height: 42px;
+                    width: 235px;
+                    border-radius: 8px;
+                }
+                .signup-signin .card .card-body .external-social-media-button .google-button {
+                    background-image: url(/images/external-media/google-login.svg);
+                    background-repeat: no-repeat;
+                    border: none;
+                    height: 42px;
+                    width: 235px;
+                    border-radius: 8px;
+                }
+                    .signup-signin .card .card-body .external-social-media-button .google-button:hover, .signup-signin .card .card-body .external-social-media-button .facebook-button:hover {
+                        filter: brightness(90%);
+                    }
 
 
 
-/* Signupforms */
+/* Visuals on signupforms, second page */
 
 #signupform input[type=text], #signupform input[type=email], #signupform input[type=password]  {
     display: block;
