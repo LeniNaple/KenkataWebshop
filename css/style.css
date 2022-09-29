@@ -871,10 +871,9 @@ html, body {
 
 
 
-
+/* Signup Cards */
 .signup-signin {
     padding: 6rem 0;
-
 }
     .signup-signin .container {
         display: grid;
@@ -913,16 +912,60 @@ html, body {
                         text-decoration: underline;
                         color: var(--color-theme-dark);
                     }
+                    .signup-signin .card .card-body .d-flex a {
+                        color: var(--color-theme);
+                        text-decoration: none;
+                    }
+                        .signup-signin .card .card-body .d-flex a:hover {
+                            color: var(--color-theme-dark);
+                            text-decoration: underline;
+                        }
+            .signup-signin .card .external-logins {
+                margin-top: 2rem;
+            }
+                .signup-signin .card .external-logins .mb-4 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .signup-signin .card .external-logins .mb-4 .line-a {
+                        border: 1px solid var(--color-gray-0);
+                        flex: 1;
+                        opacity: 0.5;
+                    }
+                    .signup-signin .card .external-logins .mb-4 .label {
+                        text-align: center;
+                        flex: 1;
+                        font-weight: var(--font-weight-medium);
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
 
-
-.signup-signin form input[type=checkbox] {
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    margin-right: .5rem;
+.external-social-media-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+    .external-social-media-button .facebook-button{
+        background-image: url(/images/external-media/facebook-login.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+        border-radius: 8px;
+    }
+    .external-social-media-button .google-button {
+        background-image: url(/images/external-media/google-login.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+        border-radius: 8px;
+    }
 
 
+
+/* Signupforms */
 
 #signupform input[type=text], #signupform input[type=email], #signupform input[type=password]  {
     display: block;
@@ -932,7 +975,6 @@ html, body {
     margin: .3rem 0;
     border: none;
 }
-
     #signupform input:focus {
         outline: 0;
         box-shadow: 0 0 3px 1px var(--color-theme);
@@ -946,12 +988,18 @@ html, body {
     margin: .3rem 0;
     border: none;
 }
-
     #signinform input:focus {
         outline: 0;
         box-shadow: 0 0 3px 1px var(--color-theme);
     }
-                
+
+.signup-signin form input[type=checkbox] {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    margin-right: .5rem;
+    align-items: center;
+}           
 
 
 
@@ -960,18 +1008,15 @@ html, body {
     
 
 
-
+/* Divider homepage */
 .partition {
     background-color: var(--color-gray-1);
-
 }
-
     .partition .container {
         display: flex;
         padding: 0;
         color: var(--color-white);
         height: 400px;
-        
     }
         .partition .container .partition-left {
             flex: 1;
@@ -1016,7 +1061,6 @@ html, body {
         .partition .container .partition-middle {
             flex: 1;
         }
-
         .partition .container .partition-right {
             flex: 1;
             font-size: 16px;
