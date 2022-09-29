@@ -16,7 +16,7 @@
 <body>
   
 
-  <header class="d-none">
+  <header>
       <div class="menu-top">
         <div class="container">
             <div class="site-settings">
@@ -65,7 +65,12 @@
               <div class="logo-type">
                   <a href="index.html"> <img src="images/Logotype.svg" alt="Nothing here..."/></a>
               </div>
-              <div class="search"></div>
+              <div class="search">
+                <form id="searchbox-form">
+                  <input id="search-text" type="text" placeholder="Search products...">
+                  <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                </form>
+              </div>
               <div class="icons">
                 <a class="icon-links" href="account.html"><i class="fa-regular fa-user me-2"></i><span>My account</span></a>
                 <a class="icon-links" href="#"><i class="fa-regular fa-heart"></i></a>
@@ -189,12 +194,5 @@
       </div>
   </section>
 
-
-
-
-
-
-<!-- remove later -->
-  <div style="height: 4000px;"></div>
 </body>
 </html>

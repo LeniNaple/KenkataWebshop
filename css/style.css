@@ -226,6 +226,50 @@ html, body {
     .main-menu-top .container .search{
         flex: 4;
     }
+        .main-menu-top .search #searchbox-form {
+            border-radius: var(--border-radius-medium);
+            height: 45px;
+            margin: auto;
+            position: relative;
+
+        }
+            .main-menu-top .search #searchbox-form input {
+                position: absolute;
+                border-radius: var(--border-radius-medium);
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: 1px solid var(--color-gray-2);
+                font-size: 0.9rem;
+                padding-left: 1.3rem;
+            }
+
+            .main-menu-top .search #searchbox-form input:focus {
+                outline: 0;
+                box-shadow: 0 0 2px 0px var(--color-theme);
+            }
+            .main-menu-top .search #searchbox-form button {
+                position: absolute;
+                top: 0;
+                right: -2px;
+                width: 50px;
+                height: 100%;
+                background-color: var(--color-theme);
+                border: none;
+                color: var(--color-white);
+                border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+                transition: color 250ms ease-in-out;
+            }
+                .main-menu-top .search #searchbox-form button:hover {
+                    color: var(--color-theme-dark);
+                }
+
+
+
+                
+
+
+
 
     .main-menu-top .container .icons {
         flex: 3;
@@ -946,7 +990,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
 }
-    .external-social-media-button .facebook-button{
+    .external-social-media-button .facebook-button {
         background-image: url(/images/external-media/facebook-login.svg);
         background-repeat: no-repeat;
         border: none;
@@ -962,6 +1006,9 @@ html, body {
         width: 235px;
         border-radius: 8px;
     }
+        .external-social-media-button .google-button:hover,.external-social-media-button .facebook-button:hover {
+            filter: brightness(90%);
+        }
 
 
 
