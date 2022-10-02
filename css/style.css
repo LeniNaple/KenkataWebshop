@@ -895,6 +895,7 @@ html, body {
 /* Divider homepage */
 .partition {
     background-color: var(--color-gray-1);
+    margin-top: 10rem;
 }
     .partition .container {
         display: flex;
@@ -908,8 +909,9 @@ html, body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             max-width: 250px;
+            justify-content: center;
+            text-align: center;
         }
             .partition .container .partition-left h1 {
                 font-family: var(--font-play);
@@ -931,6 +933,7 @@ html, body {
                 background-color: var(--color-theme-dark);
                 border-radius: var(--border-radius-medium);
                 font-weight: var(--font-weight-medium);
+                padding-top: 0.6rem;
                 padding-left: 1.3125rem;
                 padding-right: 1.3125rem;
                 border: none;
@@ -941,7 +944,6 @@ html, body {
                     color: var(--color-theme);
                     background-color: var(--color-white);
                 }      
-
         .partition .container .partition-middle {
             flex: 1;
         }
@@ -959,6 +961,8 @@ html, body {
                 background-color: var(--color-white);
                 border-radius: var(--border-radius-medium);
                 font-weight: var(--font-weight-medium);
+                margin-top: .5rem;
+                padding-top: 0.6rem;
                 padding-left: 1.3125rem;
                 padding-right: 1.3125rem;
                 border: none;
@@ -971,6 +975,108 @@ html, body {
                 }   
 
 
+
+/* Divider 2 homepage "Flash sale" */
+.partition-2 {
+    background-color: var(--color-theme-dark);
+    margin-top: 10rem;
+}
+    .partition-2 .container {
+        display: flex;
+        padding: 0;
+        color: var(--color-white);
+        height: 420px;
+    }
+        .partition-2 .container .partition-left-2 {
+            flex: 3;
+            background-color: var(--color-theme);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            text-align: center;
+            justify-content: center;
+            height: 60%;
+        }
+            .partition-2 .container .partition-left-2 h1 {
+                font-family: var(--font-play);
+                font-size: 60px;
+                font-weight: var(--font-weight-bold);
+            }
+            .partition-2 .container .partition-left-2 P {
+                font-family: var(--font-roboto);
+                font-size: 1.25rem;
+                font-weight: var(--font-weight-medium);
+            } 
+        .partition-2 .container .partition-middle-2 {
+            flex: 2;
+        }
+
+        .partition-2 .container .partition-right-2 {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .partition-2 .container .partition-right-2 .partition-right-menu-2 {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-left: 5rem;
+        }
+        .partition-2 .container .partition-right-2 .balls {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            align-items: space-between;
+            justify-content: space-between;
+        }
+        .partition-2 .container .partition-right-2 .balls .time-ball {
+            background-color: var(--color-white);
+            border-radius: 50%;
+            height: 110px;
+            width: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            outline: 3px dashed var(--color-theme);
+            margin: 0 0.5rem;
+        }
+            .partition-2 .container .partition-right-2 .balls .time-ball strong {
+                color: var(--color-theme);
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                font-size: 36px;
+                padding: 0;
+                margin-top: 1.2rem;
+                line-height: 2rem;
+            }
+            .partition-2 .container .partition-right-2 .balls .time-ball p {
+                color: var(--color-theme-dark);
+                font-weight: var(--font-weight-regular);
+                font-size: 16px;
+            }
+            .partition-2 .container .partition-right-2 .btn {
+                color: var(--color-theme);
+                background-color: var(--color-white);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                margin-top: 2rem;
+                padding-top: 0.6rem;
+                padding-left: 1.3125rem;
+                padding-right: 1.3125rem;
+                border: none;
+                font-size: 18px;
+                transition: color 250ms ease-in-out, background 250ms ease-in-out;
+            } 
+                .partition-2 .container .partition-right-2 .btn:hover {
+                    color: var(--color-white);
+                    background-color: var(--color-theme);
+                }
 
 
 
