@@ -587,6 +587,8 @@ html, body {
         position: relative;
         height: 400px;
         overflow: hidden;
+        background-color: var(--color-gray-4);
+        border: none;
     }
         .new-arrivals .card .card-bottom-line {
             display: flex;
@@ -789,6 +791,8 @@ html, body {
         position: relative;
         height: 400px;
         overflow: hidden;
+        background-color: var(--color-gray-4);
+        border: none;
     }
         .featured-products .card .card-bottom-line {
             display: flex;
@@ -1003,13 +1007,15 @@ html, body {
 /* Top sellers */
 .top-sellers .container {
     padding: 0;
+    margin-top: 7rem;    
 }
 
     .top-sellers .sellers-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
         gap: 0.625rem;
+        overflow: hidden;
     } 
         
     #sellers-card-1 {
@@ -1030,6 +1036,9 @@ html, body {
         position: relative;
         height: 100%;
         overflow: hidden;
+        width: 100%;
+        background-color: var(--color-gray-4);
+        border: none;
     }
         .top-sellers .sellers-grid .card .card-bottom-line {
             display: flex;
@@ -1038,6 +1047,7 @@ html, body {
         }
         .top-sellers .sellers-grid .card img {
             height: 100%;
+            align-self: center;
         }
         .top-sellers .sellers-grid .card .card-body {
             position: absolute;
