@@ -433,6 +433,7 @@ html, body {
                 padding-top: 1rem;
                 border-radius: 50px;
                 border: none;
+                transition: 250ms ease-in-out;
             }
                 .showcase .container .showcase-left .btn:hover { 
                     color: var(--color-theme-dark);
@@ -694,6 +695,398 @@ html, body {
 
 
 
+/* Divider homepage */
+.partition {
+    background-color: var(--color-gray-1);
+    margin-top: 10rem;
+}
+    .partition .container {
+        display: flex;
+        padding: 0;
+        color: var(--color-white);
+        height: 400px;
+    }
+        .partition .container .partition-left {
+            flex: 1;
+            background-color: var(--color-theme);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            justify-content: center;
+            text-align: center;
+        }
+            .partition .container .partition-left h1 {
+                font-family: var(--font-play);
+                font-size: 60px;
+                font-weight: var(--font-weight-bold);
+            }
+            .partition .container .partition-left h1 strong {
+                font-family: var(--font-play);
+                font-size: 36px;
+                font-weight: var(--font-weight-bold);
+            }
+            .partition .container .partition-left p {
+                font-size: 16px;
+                font-weight: var(--font-weight-regular);
+            }
+            .partition .container .partition-left .btn {
+                margin-top: .5rem;
+                color: var(--color-white);
+                background-color: var(--color-theme-dark);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                padding-top: 0.6rem;
+                padding-left: 1.3125rem;
+                padding-right: 1.3125rem;
+                border: none;
+                font-size: var(--font-size-14);
+                transition: color 250ms ease-in-out, background 250ms ease-in-out;
+            } 
+                .partition .container .partition-left .btn:hover {
+                    color: var(--color-theme);
+                    background-color: var(--color-white);
+                }      
+        .partition .container .partition-middle {
+            flex: 1;
+        }
+        .partition .container .partition-right {
+            flex: 1;
+            font-size: 16px;
+            font-weight: var(--font-weight-regular);
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+            .partition .container .partition-right .btn {
+                color: var(--color-theme);
+                background-color: var(--color-white);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                margin-top: .5rem;
+                padding-top: 0.6rem;
+                padding-left: 1.3125rem;
+                padding-right: 1.3125rem;
+                border: none;
+                font-size: var(--font-size-14);
+                transition: color 250ms ease-in-out, background 250ms ease-in-out;
+            } 
+                .partition .container .partition-right .btn:hover {
+                    color: var(--color-white);
+                    background-color: var(--color-theme-dark);
+                }   
+
+
+
+
+
+/* Featured products */
+.featured-products {
+    padding-top: 7rem;
+} 
+    .featured-products .card {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+    }
+        .featured-products .card .card-bottom-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .featured-products .card img {
+            height: 400px;
+        }
+        .featured-products .card .card-body {
+            position: absolute;
+            bottom: 0;
+            height: 14%;
+            width: 100%;
+            color: var(--color-white);
+            z-index: 1;
+            transition: 300ms ease-in-out;  
+            font-size: 1rem; 
+        }
+            .featured-products .card:hover .card-body {
+                height: 40%;
+            }
+        .featured-products .card .card-body h1 {
+            font-size: 1.125rem;
+            font-weight: var(--font-weight-regular);
+        }
+        .featured-products .card .card-body button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            opacity: 0%;
+            transition: opacity 300ms ease-in-out, margin 300ms ease-in-out;
+        }
+            .featured-products .card:hover .card-body button {
+                opacity: 100%;
+                margin-top: 0;
+            }
+        .featured-products .card .card-body .card-old-price {
+            text-decoration: line-through;
+            margin-bottom: 0;
+            opacity: 0%;
+            transition: opacity 300ms ease-in-out;
+        }
+            .featured-products .card:hover .card-body .card-old-price {
+                opacity: 100%;
+            }
+        .featured-products .card .card-body .card-discount-price {
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            font-size: 1.5em;
+            margin: 0;
+            opacity: 0%;
+            transition: opacity 300ms ease-in-out;
+        }
+            .featured-products .card:hover .card-body .card-discount-price {
+                opacity: 100%;
+            }
+    .featured-products .card .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 90%;
+        transition: height 300ms ease-in-out;
+    }
+        .featured-products .card:hover .card-background {
+            height: 100%;
+        }
+    .featured-products .card .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 105%;
+        right: 1rem;
+        list-style: none;
+        margin: auto;
+        padding: 0.8rem;
+        font-size: 1.125rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 300ms ease-in-out;
+    }
+        .featured-products .card:hover .card-menu {
+            top: 20px;
+        }
+            .featured-products .card .card-menu li{
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+                font-size: 1em;
+            }
+                .featured-products .card .card-menu li:last-child {
+                    font-size: 1.1em;
+                }
+
+                .featured-products .card .card-menu li a{
+                    color: var(--color-gray-0);
+                }
+                    .featured-products .card .card-menu li a:hover {
+                        color: var(--color-theme);
+                    }
+
+
+
+
+/* Divider 2 homepage "Flash sale" */
+.partition-2 {
+    background-color: var(--color-theme-dark);
+    margin-top: 10rem;
+}
+    .partition-2 .container {
+        display: flex;
+        padding: 0;
+        color: var(--color-white);
+        height: 420px;
+    }
+        .partition-2 .container .partition-left-2 {
+            flex: 3;
+            background-color: var(--color-theme);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            text-align: center;
+            justify-content: center;
+            height: 60%;
+        }
+            .partition-2 .container .partition-left-2 h1 {
+                font-family: var(--font-play);
+                font-size: 60px;
+                font-weight: var(--font-weight-bold);
+            }
+            .partition-2 .container .partition-left-2 P {
+                font-family: var(--font-roboto);
+                font-size: 1.25rem;
+                font-weight: var(--font-weight-medium);
+            } 
+        .partition-2 .container .partition-middle-2 {
+            flex: 2;
+        }
+        .partition-2 .container .partition-right-2 {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .partition-2 .container .partition-right-2 .partition-right-menu-2 {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: 5rem;
+            }
+                .partition-2 .container .partition-right-2 .balls {
+                    width: 100%;
+                    flex: 1;
+                    display: flex;
+                    align-items: space-between;
+                    justify-content: space-between;
+                }
+                    .partition-2 .container .partition-right-2 .balls .time-ball {
+                        background-color: var(--color-white);
+                        border-radius: 50%;
+                        height: 110px;
+                        width: 110px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        outline: 3px dashed var(--color-theme);
+                        margin: 0 0.5rem;
+                    }
+                        .partition-2 .container .partition-right-2 .balls .time-ball strong {
+                            color: var(--color-theme);
+                            font-family: var(--font-play);
+                            font-weight: var(--font-weight-bold);
+                            font-size: 36px;
+                            padding: 0;
+                            margin-top: 1.2rem;
+                            line-height: 2rem;
+                        }
+                        .partition-2 .container .partition-right-2 .balls .time-ball p {
+                            color: var(--color-theme-dark);
+                            font-weight: var(--font-weight-regular);
+                            font-size: 16px;
+                        }
+                .partition-2 .container .partition-right-2 .partition-right-menu-2 .btn {
+                    color: var(--color-theme);
+                    background-color: var(--color-white);
+                    border-radius: var(--border-radius-medium);
+                    font-weight: var(--font-weight-medium);
+                    margin-top: 2rem;
+                    padding-top: 0.6rem;
+                    padding-left: 1.3125rem;
+                    padding-right: 1.3125rem;
+                    border: none;
+                    font-size: 18px;
+                    transition: color 250ms ease-in-out, background 250ms ease-in-out;
+                } 
+                    .partition-2 .container .partition-right-2 .btn:hover {
+                        color: var(--color-white);
+                        background-color: var(--color-theme);
+                    }
+
+
+
+
+/* Final part of first page */
+.end-partition {
+    background-color: var(--color-gray-4);
+    height: 315px;
+    margin-top: 8rem;
+}   
+    .end-partition .container {
+        height: 100%;
+        display: flex;
+        padding: 0;
+    }  
+
+/* Left side */
+        .end-partition .container .end-partition-left {
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            margin-right: 30px;
+        }  
+            .end-partition .container .end-partition-left h1 {
+                font-family: var(--font-play);
+                font-size: var(--font-size-36);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-theme-dark);
+            }  
+                .end-partition .container .end-partition-left h1 strong {
+                    color: var(--color-theme);
+                }  
+            .end-partition .container .end-partition-left p {
+                margin-top: 1rem;
+                margin-right: 35%;
+                font-size: 16px;
+            }   
+
+/* Subscribe form */
+            .end-partition .container .end-partition-left .subscribe-now {
+                border-radius: var(--border-radius-medium);
+                height: 45px;
+                position: relative;
+                width: 80%;
+            }
+                .end-partition .container .end-partition-left .subscribe-now input {
+                    position: absolute;
+                    border-radius: var(--border-radius-medium);
+                    height: 100%;
+                    width: 100%;
+                    border: var(--color-gray-2) 1px solid;
+                    outline: none;
+                    font-size: 0.9rem;
+                    padding-left: 1.3rem;
+                }
+                    #subscribe::placeholder {
+                        color: var(--color-gray-0);
+                    }
+                    .end-partition .container .end-partition-left .subscribe-now input:focus {
+                        outline: 0;
+                        box-shadow: 0 0 2px 0px var(--color-theme);
+                    }   
+                .end-partition .container .end-partition-left .subscribe-now button {
+                    position: absolute;
+                    top: 4px;
+                    right: 4px;
+                    height: calc(100% - 8px);
+                    border-radius: 50px;
+                    color: var(--color-white);
+                    background-color: var(--color-theme);
+                    border: none;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    transition: background 250ms ease-in-out;
+                }
+                    .end-partition .container .end-partition-left .subscribe-now button:hover {
+                        background-color: var(--color-theme-dark);
+                    }
+
+/* Right side */
+        .end-partition .container .end-partition-right {
+            flex: 1;
+            background-color: var(--color-gray-1);
+        }  
+
+
+
 
 
 /* Second webpage - Top part */
@@ -850,7 +1243,6 @@ html, body {
 
 
 /* Visuals on signupforms, second page */
-
 #signupform input[type=text], #signupform input[type=email], #signupform input[type=password]  {
     display: block;
     width: 100%;
@@ -887,203 +1279,21 @@ html, body {
 
 
 
-
-
-    
-
-
-/* Divider homepage */
-.partition {
-    background-color: var(--color-gray-1);
-    margin-top: 10rem;
+/* End of website, both pages */
+.copyright-kenkata {
+    height: 80px;
+    background-color: var(--color-dark);
 }
-    .partition .container {
+    .copyright-kenkata .container {
+        height: 100%;
         display: flex;
+        align-items: center;
         padding: 0;
-        color: var(--color-white);
-        height: 400px;
     }
-        .partition .container .partition-left {
-            flex: 1;
-            background-color: var(--color-theme);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 250px;
-            justify-content: center;
-            text-align: center;
+        .copyright-kenkata .container p {
+            margin: 0;
+            color: var(--color-white);
         }
-            .partition .container .partition-left h1 {
-                font-family: var(--font-play);
-                font-size: 60px;
-                font-weight: var(--font-weight-bold);
-            }
-            .partition .container .partition-left h1 strong {
-                font-family: var(--font-play);
-                font-size: 36px;
-                font-weight: var(--font-weight-bold);
-            }
-            .partition .container .partition-left p {
-                font-size: 16px;
-                font-weight: var(--font-weight-regular);
-            }
-            .partition .container .partition-left .btn {
-                margin-top: .5rem;
-                color: var(--color-white);
-                background-color: var(--color-theme-dark);
-                border-radius: var(--border-radius-medium);
-                font-weight: var(--font-weight-medium);
-                padding-top: 0.6rem;
-                padding-left: 1.3125rem;
-                padding-right: 1.3125rem;
-                border: none;
-                font-size: var(--font-size-14);
-                transition: color 250ms ease-in-out, background 250ms ease-in-out;
-            } 
-                .partition .container .partition-left .btn:hover {
-                    color: var(--color-theme);
-                    background-color: var(--color-white);
-                }      
-        .partition .container .partition-middle {
-            flex: 1;
-        }
-        .partition .container .partition-right {
-            flex: 1;
-            font-size: 16px;
-            font-weight: var(--font-weight-regular);
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-        }
-            .partition .container .partition-right .btn {
-                color: var(--color-theme);
-                background-color: var(--color-white);
-                border-radius: var(--border-radius-medium);
-                font-weight: var(--font-weight-medium);
-                margin-top: .5rem;
-                padding-top: 0.6rem;
-                padding-left: 1.3125rem;
-                padding-right: 1.3125rem;
-                border: none;
-                font-size: var(--font-size-14);
-                transition: color 250ms ease-in-out, background 250ms ease-in-out;
-            } 
-                .partition .container .partition-right .btn:hover {
-                    color: var(--color-white);
-                    background-color: var(--color-theme-dark);
-                }   
-
-
-
-/* Divider 2 homepage "Flash sale" */
-.partition-2 {
-    background-color: var(--color-theme-dark);
-    margin-top: 10rem;
-}
-    .partition-2 .container {
-        display: flex;
-        padding: 0;
-        color: var(--color-white);
-        height: 420px;
-    }
-        .partition-2 .container .partition-left-2 {
-            flex: 3;
-            background-color: var(--color-theme);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 250px;
-            text-align: center;
-            justify-content: center;
-            height: 60%;
-        }
-            .partition-2 .container .partition-left-2 h1 {
-                font-family: var(--font-play);
-                font-size: 60px;
-                font-weight: var(--font-weight-bold);
-            }
-            .partition-2 .container .partition-left-2 P {
-                font-family: var(--font-roboto);
-                font-size: 1.25rem;
-                font-weight: var(--font-weight-medium);
-            } 
-        .partition-2 .container .partition-middle-2 {
-            flex: 2;
-        }
-
-        .partition-2 .container .partition-right-2 {
-            flex: 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .partition-2 .container .partition-right-2 .partition-right-menu-2 {
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-left: 5rem;
-        }
-        .partition-2 .container .partition-right-2 .balls {
-            width: 100%;
-            flex: 1;
-            display: flex;
-            align-items: space-between;
-            justify-content: space-between;
-        }
-        .partition-2 .container .partition-right-2 .balls .time-ball {
-            background-color: var(--color-white);
-            border-radius: 50%;
-            height: 110px;
-            width: 110px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            outline: 3px dashed var(--color-theme);
-            margin: 0 0.5rem;
-        }
-            .partition-2 .container .partition-right-2 .balls .time-ball strong {
-                color: var(--color-theme);
-                font-family: var(--font-play);
-                font-weight: var(--font-weight-bold);
-                font-size: 36px;
-                padding: 0;
-                margin-top: 1.2rem;
-                line-height: 2rem;
-            }
-            .partition-2 .container .partition-right-2 .balls .time-ball p {
-                color: var(--color-theme-dark);
-                font-weight: var(--font-weight-regular);
-                font-size: 16px;
-            }
-            .partition-2 .container .partition-right-2 .btn {
-                color: var(--color-theme);
-                background-color: var(--color-white);
-                border-radius: var(--border-radius-medium);
-                font-weight: var(--font-weight-medium);
-                margin-top: 2rem;
-                padding-top: 0.6rem;
-                padding-left: 1.3125rem;
-                padding-right: 1.3125rem;
-                border: none;
-                font-size: 18px;
-                transition: color 250ms ease-in-out, background 250ms ease-in-out;
-            } 
-                .partition-2 .container .partition-right-2 .btn:hover {
-                    color: var(--color-white);
-                    background-color: var(--color-theme);
-                }
-
-
-
-                    
-
-
-
 
 
 
